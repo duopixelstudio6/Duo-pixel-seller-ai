@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Duo Pixel Seller AI helps small businesses create WhatsApp sales messages, social captions, product descriptions and promotional content in seconds.">
+  <meta name="keywords" content="AI marketing generator, WhatsApp sales message generator, social media caption generator, small business marketing">
+  <meta name="theme-color" content="#111827">
+  <title>Duo Pixel Seller AI — Create Marketing Content in Seconds</title>
+  <style>
+    :root{
+      --bg:#f7f8fc;--card:#fff;--text:#111827;--muted:#667085;
+      --line:#e5e7eb;--primary:#6d5dfc;--primary2:#5146e5;
+      --soft:#f0eeff;--success:#0f9d68;--shadow:0 18px 55px rgba(16,24,40,.10);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--text);background:var(--bg);line-height:1.5}
+    a{text-decoration:none;color:inherit}
+    .nav{height:72px;display:flex;align-items:center;justify-content:space-between;max-width:1160px;margin:auto;padding:0 22px}
+    .brand{font-weight:800;font-size:19px;display:flex;align-items:center;gap:10px}
+    .logo{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,#7c6cff,#4f46e5);display:grid;place-items:center;color:#fff;font-weight:900}
+    .navlinks{display:flex;gap:22px;color:#667085;font-size:14px}
+    .navlinks a:hover{color:var(--text)}
+    .hero{max-width:1160px;margin:0 auto;padding:72px 22px 44px;display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center}
+    .pill{display:inline-flex;align-items:center;gap:7px;background:var(--soft);color:#5146e5;padding:7px 12px;border-radius:999px;font-size:13px;font-weight:700}
+    .dot{width:7px;height:7px;background:#6d5dfc;border-radius:50%}
+    h1{font-size:clamp(40px,5.4vw,68px);line-height:1.02;letter-spacing:-2.8px;margin:18px 0}
+    .gradient{background:linear-gradient(100deg,#6d5dfc,#a855f7);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .hero p{font-size:18px;color:var(--muted);max-width:610px;margin:0 0 26px}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{border:0;border-radius:12px;padding:13px 18px;font-weight:750;font-size:14px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:8px}
+    .btn-primary{background:var(--primary);color:#fff;box-shadow:0 10px 25px rgba(109,93,252,.24)}
+    .btn-primary:hover{background:var(--primary2);transform:translateY(-1px)}
+    .btn-light{background:#fff;border:1px solid var(--line);color:var(--text)}
+    .mini{font-size:12px;color:#98a2b3;margin-top:13px}
+    .demo{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:18px;box-shadow:var(--shadow)}
+    .demo-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:15px}
+    .window{display:flex;gap:5px}.window span{width:8px;height:8px;border-radius:50%;background:#d0d5dd}
+    .demo-label{font-size:12px;font-weight:700;color:#98a2b3}
+    .field{margin-bottom:12px}
+    label{font-size:12px;font-weight:700;display:block;margin-bottom:6px}
+    input,textarea,select{width:100%;border:1px solid var(--line);border-radius:10px;padding:11px 12px;font:inherit;font-size:14px;outline:none;background:#fff}
+    input:focus,textarea:focus,select:focus{border-color:#8b80ff;box-shadow:0 0 0 3px rgba(109,93,252,.10)}
+    textarea{resize:vertical;min-height:72px}
+    .grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    .generate{width:100%;margin-top:3px}
+    .section{max-width:1160px;margin:0 auto;padding:58px 22px}
+    .section-head{text-align:center;max-width:700px;margin:0 auto 30px}
+    .section-head h2{font-size:34px;letter-spacing:-1px;margin:0 0 9px}
+    .section-head p{color:var(--muted);margin:0}
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .feature{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px}
+    .icon{width:40px;height:40px;border-radius:11px;background:var(--soft);display:grid;place-items:center;margin-bottom:15px;font-size:19px}
+    .feature h3{font-size:16px;margin:0 0 6px}.feature p{font-size:14px;color:var(--muted);margin:0}
+    .tool-section{padding-top:28px}
+    .app{background:#111827;color:#fff;border-radius:24px;padding:28px;box-shadow:var(--shadow)}
+    .app-head{display:flex;justify-content:space-between;gap:20px;align-items:center;margin-bottom:20px}
+    .app-head h2{margin:0;font-size:25px}.app-head p{margin:4px 0 0;color:#aab2c0;font-size:13px}
+    .app-grid{display:grid;grid-template-columns:360px 1fr;gap:18px}
+    .form-card,.results-card{background:#fff;color:var(--text);border-radius:16px;padding:18px}
+    .result{border:1px solid var(--line);border-radius:12px;padding:14px;margin-bottom:11px}
+    .result:last-child{margin-bottom:0}
+    .result-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+    .result-title{font-size:13px;font-weight:800}.copy{border:1px solid var(--line);background:#fff;border-radius:8px;padding:6px 9px;font-size:11px;font-weight:700;cursor:pointer}
+    .result-body{font-size:13px;color:#475467;white-space:pre-wrap}
+    .placeholder{display:grid;place-items:center;min-height:280px;text-align:center;color:#98a2b3;padding:20px}
+    .pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .price{background:#fff;border:1px solid var(--line);border-radius:16px;padding:23px;position:relative}
+    .price.pop{border:2px solid var(--primary)}
+    .popular{position:absolute;right:15px;top:15px;background:var(--soft);color:#5146e5;font-size:10px;font-weight:800;padding:5px 8px;border-radius:999px}
+    .price h3{margin:0 0 8px}.amount{font-size:31px;font-weight:850;margin:12px 0}.amount small{font-size:12px;color:var(--muted);font-weight:500}
+    .price ul{padding-left:18px;color:var(--muted);font-size:13px;min-height:115px}
+    footer{border-top:1px solid var(--line);padding:28px 22px;color:#98a2b3;font-size:12px;text-align:center}
+    .toast{position:fixed;bottom:22px;left:50%;transform:translate(-50%,20px);background:#111827;color:#fff;padding:10px 15px;border-radius:10px;font-size:13px;opacity:0;pointer-events:none;transition:.25s;z-index:10}
+    .toast.show{opacity:1;transform:translate(-50%,0)}
+    @media(max-width:850px){.hero{grid-template-columns:1fr;padding-top:45px}.features,.pricing{grid-template-columns:1fr}.app-grid{grid-template-columns:1fr}.navlinks{display:none}}
+    @media(max-width:520px){h1{letter-spacing:-1.8px}.grid2{grid-template-columns:1fr}.hero-actions .btn{width:100%}.app{padding:16px}}
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <a class="brand" href="#"><span class="logo">D</span>Duo Pixel Seller AI</a>
+    <div class="navlinks">
+      <a href="#tool">Try it</a><a href="#features">Features</a><a href="#pricing">Pricing</a>
+    </div>
+    <a class="btn btn-primary" href="#tool">Try Free</a>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div>
+        <span class="pill"><span class="dot"></span> Built for small businesses</span>
+        <h1>Turn one product into <span class="gradient">marketing content.</span></h1>
+        <p>Create ready-to-use WhatsApp sales messages, social captions, product descriptions and short-video scripts in seconds.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#tool">Generate for free →</a>
+          <a class="btn btn-light" href="#features">See how it works</a>
+        </div>
+        <div class="mini">No complicated setup. Enter your product, generate, copy and sell.</div>
+      </div>
+      <div class="demo">
+        <div class="demo-top"><div class="window"><span></span><span></span><span></span></div><span class="demo-label">LIVE DEMO</span></div>
+        <div class="field"><label>Product name</label><input id="heroProduct" value="Oversized Cotton T-Shirt"></div>
+        <div class="grid2">
+          <div class="field"><label>Price</label><input id="heroPrice" value="Rs. 1,499"></div>
+          <div class="field"><label>Language</label><select id="heroLang"><option>English</option><option>Nepali</option></select></div>
+        </div>
+        <div class="field"><label>Product details</label><textarea id="heroDetails">Premium cotton, multiple colors, free delivery.</textarea></div>
+        <button class="btn btn-primary generate" onclick="generateFromHero()">✨ Generate content</button>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="section-head">
+        <h2>Everything a seller needs to promote a product.</h2>
+        <p>One simple tool instead of writing the same marketing copy again and again.</p>
+      </div>
+      <div class="features">
+        <div class="feature"><div class="icon">💬</div><h3>WhatsApp Sales Messages</h3><p>Turn product details into persuasive, ready-to-send customer messages.</p></div>
+        <div class="feature"><div class="icon">📱</div><h3>Social Captions</h3><p>Create Instagram, Facebook and TikTok-ready promotional copy.</p></div>
+        <div class="feature"><div class="icon">🎬</div><h3>Video Scripts</h3><p>Get short-form hooks and scripts designed to showcase your product.</p></div>
+      </div>
+    </section>
+
+    <section class="section tool-section" id="tool">
+      <div class="app">
+        <div class="app-head">
+          <div><h2>Seller AI Generator</h2><p>Try the demo below. Live AI generation. Your product details are sent securely to our server-side AI endpoint.</p></div>
+          <span class="pill">3 free generations</span>
+        </div>
+        <div class="app-grid">
+          <div class="form-card">
+            <div class="field"><label>Product name *</label><input id="product" placeholder="e.g. Wireless Earbuds"></div>
+            <div class="grid2">
+              <div class="field"><label>Price</label><input id="price" placeholder="e.g. Rs. 2,499"></div>
+              <div class="field"><label>Language</label><select id="language"><option>English</option><option>Nepali</option></select></div>
+            </div>
+            <div class="field"><label>Target customer</label><input id="customer" placeholder="e.g. students, young adults"></div>
+            <div class="field"><label>Product details *</label><textarea id="details" placeholder="Features, offer, delivery, colors, warranty, etc."></textarea></div>
+            <button class="btn btn-primary generate" id="genBtn" onclick="generateContent()">✨ Generate content</button>
+            <div class="mini" style="color:#98a2b3">Live AI mode — your API key stays on the server.</div>
+          </div>
+          <div class="results-card" id="results">
+            <div class="placeholder">
+              <div><div style="font-size:38px;margin-bottom:8px">✨</div><strong>Your marketing content will appear here.</strong><div style="font-size:12px;margin-top:6px">Enter your product details and click Generate.</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="pricing">
+      <div class="section-head"><h2>Simple pricing</h2><p>Start free. Pay when the tool becomes useful to your business.</p></div>
+      <div class="pricing">
+        <div class="price"><h3>Free</h3><div class="amount">$0</div><ul><li>3 generations</li><li>Core marketing formats</li><li>Copy-to-clipboard</li></ul><a class="btn btn-light" href="#tool">Try free</a></div>
+        <div class="price pop"><span class="popular">MOST POPULAR</span><h3>Creator</h3><div class="amount">$2.99 <small>/ month</small></div><ul><li>50 generations</li><li>All content formats</li><li>Saved history</li><li>Priority features</li></ul><button class="btn btn-primary" onclick="startCheckout('creator')">Get Creator</button></div>
+        <div class="price"><h3>Pro</h3><div class="amount">$5.99 <small>/ month</small></div><ul><li>Unlimited generations*</li><li>Brand voice</li><li>Advanced promotional content</li><li>Future premium tools</li></ul><button class="btn btn-light" onclick="startCheckout('pro')">Get Pro</button></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 Duo Pixel Seller AI · Built by Duo Pixel Studio</footer>
+  <div class="toast" id="toast"></div>
+
+  <script>
+    let generations = Number(localStorage.getItem("dp_generations") || 0);
+    const FREE_LIMIT = 3;
+
+    function values(prefix="") {
+      return {
+        product: document.getElementById(prefix+"product").value.trim(),
+        price: document.getElementById(prefix+"price").value.trim() || "",
+        details: document.getElementById(prefix+"details").value.trim(),
+        customer: document.getElementById(prefix+"customer")?.value.trim() || "",
+        language: document.getElementById(prefix+"language")?.value || "English"
+      };
+    }
+    function render(items){
+      const box=document.getElementById("results");
+      box.innerHTML=items.map((x,i)=>`<div class="result"><div class="result-head"><span class="result-title">${escapeHtml(x[0])}</span><button class="copy" onclick="copyText(${i})">Copy</button></div><div class="result-body" id="r${i}">${escapeHtml(x[1])}</div></div>`).join("");
+      window.generatedItems=items;
+    }
+    function escapeHtml(s){return String(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
+    async function copyText(i){
+      await navigator.clipboard.writeText(window.generatedItems[i][1]);
+      showToast("Copied to clipboard ✓");
+    }
+    async function generateContent(){
+      const v=values();
+      if(!v.product || !v.details){showToast("Please enter a product name and details.");return;}
+      if(generations>=FREE_LIMIT){showToast("Free generations used. Choose a plan to continue.");document.getElementById("pricing").scrollIntoView({behavior:"smooth"});return;}
+      const btn=document.getElementById("genBtn");
+      btn.disabled=true; btn.textContent="✨ Creating real content...";
+      try{
+        const response=await fetch("/api/generate",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({...v,tone:"persuasive, friendly, professional",platform:"all"})});
+        const data=await response.json();
+        if(!response.ok) throw new Error(data.error||"Generation failed");
+        const items=[
+          ["WhatsApp Sales Message",data.whatsapp],
+          ["Instagram Caption",data.instagram],
+          ["Facebook Promotion",data.facebook],
+          ["Short Video Script",data.video_script],
+          ["Offer Message",data.offer_message],
+          ["Hashtags",data.hashtags]
+        ];
+        generations++; localStorage.setItem("dp_generations",generations);
+        render(items);
+        btn.textContent=`✨ Generate (${Math.max(0,FREE_LIMIT-generations)} free left)`;
+        showToast("AI content generated ✓");
+      }catch(err){
+        showToast(err.message||"Something went wrong.");
+        btn.textContent=`✨ Generate (${Math.max(0,FREE_LIMIT-generations)} free left)`;
+      }finally{btn.disabled=false;}
+    }
+    function generateFromHero(){
+      document.getElementById("product").value=document.getElementById("heroProduct").value;
+      document.getElementById("price").value=document.getElementById("heroPrice").value;
+      document.getElementById("details").value=document.getElementById("heroDetails").value;
+      document.getElementById("language").value=document.getElementById("heroLang").value;
+      document.getElementById("tool").scrollIntoView({behavior:"smooth"});
+      setTimeout(generateContent,450);
+    }
+    function startCheckout(plan){
+      const url = plan === "creator" ? "__CHECKOUT_CREATOR_URL__" : "__CHECKOUT_PRO_URL__";
+      if(!url || url.includes("CHECKOUT_")){showToast("Checkout isn't connected yet. Add the real checkout URL in the deployment settings.");return;}
+      window.location.href=url;
+    }
+    function showToast(msg){const t=document.getElementById("toast");t.textContent=msg;t.classList.add("show");clearTimeout(window.toastTimer);window.toastTimer=setTimeout(()=>t.classList.remove("show"),2500);}
+    document.addEventListener("DOMContentLoaded",()=>{
+      const b=document.getElementById("genBtn"); if(b) b.textContent=`✨ Generate (${Math.max(0,FREE_LIMIT-generations)} free left)`;
+    });
+  </script>
+</body>
+</html>
